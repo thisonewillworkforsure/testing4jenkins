@@ -18,8 +18,7 @@ import com.revature.services.PostService;
 
 @RestController
 @RequestMapping("/post")
-@CrossOrigin
-//@CrossOrigin(origins = "https://mrbucket456.s3.amazonaws.com/", allowCredentials = "true")
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
 public class PostController {
 
 	private final PostService postService;
