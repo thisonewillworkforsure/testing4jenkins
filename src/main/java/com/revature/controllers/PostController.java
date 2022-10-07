@@ -30,6 +30,7 @@ public class PostController {
     @Authorized
     @GetMapping
     public ResponseEntity<List<Post>> getAllPosts() {
+    	System.out.println("WE ACTUALLY DO GET TO GETALL POSTS");
     	return ResponseEntity.ok(this.postService.getAll());
     }
     
