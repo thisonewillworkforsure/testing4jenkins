@@ -31,7 +31,8 @@ public class AuthController {
         }
 
         session.setAttribute("user", optional.get());
-
+        System.out.println(optional.get());
+        System.out.println("that was optional.get");
         return ResponseEntity.ok(optional.get());
     }
 
